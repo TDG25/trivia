@@ -1,45 +1,25 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
 using UglyTrivia;
 
 namespace Trivia
 {
     public class GameRunner
     {
-
-        private static bool notAWinner;
-
         public static void Main(String[] args)
         {
-            Game aGame = new Game();
+            var aGame = new Game();
+            aGame.QueuePlayer("A");
+            aGame.QueuePlayer("B");
+            aGame.Initialise();
 
-            aGame.add("Chet");
-            aGame.add("Pat");
-            aGame.add("Sue");
-
-            Random rand = new Random();
-
-            do
+            if (aGame.State == GameState.InvalidPlayerCount)
             {
-
-                aGame.roll(rand.Next(5) + 1);
-
-                if (rand.Next(9) == 7)
-                {
-                    notAWinner = aGame.wrongAnswer();
-                }
-                else
-                {
-                    notAWinner = aGame.wasCorrectlyAnswered();
-                }
-
-
-
-            } while (notAWinner);
-
+                Console.WriteLine("Cannot start game. This game requires for 2-6 players.");
+                Console.ReadKey();
+                return;
+            }
+            aGame.Play();
+            Console.ReadKey();
         }
 
 

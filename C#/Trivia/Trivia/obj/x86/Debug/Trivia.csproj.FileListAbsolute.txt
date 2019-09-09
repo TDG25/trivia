@@ -1,0 +1,6 @@
+C:\Users\developer\Desktop\C#\Trivia\Trivia\bin\Debug\Trivia.exe
+C:\Users\developer\Desktop\C#\Trivia\Trivia\bin\Debug\Trivia.pdb
+C:\Users\developer\Desktop\C#\Trivia\Trivia\obj\x86\Debug\Trivia.csprojAssemblyReference.cache
+C:\Users\developer\Desktop\C#\Trivia\Trivia\obj\x86\Debug\Trivia.csproj.CoreCompileInputs.cache
+C:\Users\developer\Desktop\C#\Trivia\Trivia\obj\x86\Debug\Trivia.exe
+C:\Users\developer\Desktop\C#\Trivia\Trivia\obj\x86\Debug\Trivia.pdb
